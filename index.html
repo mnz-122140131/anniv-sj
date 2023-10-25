@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Anniversary Greetings</title>
+</head>
+<body>
+
+    <div class="container" id="container">
+        <h1 onclick="playVideo()">Happy Anniversary!</h1>
+        <p>
+            Terima kasih telah bersama-sama dalam perjalanan ini.
+            Semoga cinta dan kebahagiaan selalu menyertai kita. Maaf jika banyak salah diriku dalam hubungan ini, 
+            semoga hari demi hari dapat menjadikanku lebih mengerti dan menghargai makna sebuah cinta.
+        </p>
+        
+        <p class="signature">
+            <a href="#" onclick="showPhoto()">SALMAN ❤️ JINAN</a>
+        </p>
+    </div>
+
+    <div class="photo-overlay" id="photoOverlay">
+        <img src="fotofoto.jpg" alt="Your Names Here">
+        <div class="close-button" onclick="hidePhoto()">✕</div>
+    </div>
+
+    <div class="video-overlay" id="videoOverlay">
+        <video controls width="80%" id="anniversaryVideo" onended="hideVideo()">
+            <source src="videosj.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="close-button" onclick="hideVideo()">✕</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
